@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор пиццы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конструктор пиццы</h1>
+        
+        <div class="constructor">
+            <div class="column">
+                <h3>Основа</h3>
+                <ul class="ingredient-list" id="base-list">
+                    <li class="ingredient-item" data-type="base" data-name="Тонкое тесто" data-price="150">Тонкое тесто</li>
+                    <li class="ingredient-item" data-type="base" data-name="Традиционное тесто" data-price="180">Традиционное тесто</li>
+                    <li class="ingredient-item" data-type="base" data-name="Сырные бортики" data-price="220">Сырные бортики</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <h3>Соус</h3>
+                <ul class="ingredient-list" id="sauce-list">
+                    <li class="ingredient-item" data-type="sauce" data-name="Томатный" data-price="50">Томатный</li>
+                    <li class="ingredient-item" data-type="sauce" data-name="Сливочный" data-price="60">Сливочный</li>
+                    <li class="ingredient-item" data-type="sauce" data-name="Острый" data-price="70">Острый</li>
+                    <li class="ingredient-item" data-type="sauce" data-name="Барбекю" data-price="80">Барбекю</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <h3>Ингредиент 1</h3>
+                <ul class="ingredient-list" id="ingredient1-list">
+                    <li class="ingredient-item" data-type="ingredient1" data-name="Пепперони" data-price="90">Пепперони</li>
+                    <li class="ingredient-item" data-type="ingredient1" data-name="Ветчина" data-price="80">Ветчина</li>
+                    <li class="ingredient-item" data-type="ingredient1" data-name="Курица" data-price="85">Курица</li>
+                    <li class="ingredient-item" data-type="ingredient1" data-name="Бекон" data-price="100">Бекон</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <h3>Ингредиент 2</h3>
+                <ul class="ingredient-list" id="ingredient2-list">
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Шампиньоны" data-price="60">Шампиньоны</li>
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Маслины" data-price="70">Маслины</li>
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Томаты" data-price="50">Томаты</li>
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Ананасы" data-price="65">Ананасы</li>
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Лук" data-price="40">Лук</li>
+                    <li class="ingredient-item" data-type="ingredient2" data-name="Перец" data-price="55">Перец</li>
+                </ul>
+            </div>
+            
+            <div class="pizza-preview">
+                <div class="pizza-image">
+                    <div class="pizza-base"></div>
+                    <div class="pizza-part" id="base-part"></div>
+                    <div class="pizza-part" id="sauce-part"></div>
+                    <div class="pizza-part" id="ingredient1-part"></div>
+                    <div class="pizza-part" id="ingredient2-part"></div>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Ваш заказ</h3>
+                    <div class="selected-items" id="selected-items"></div>
+                    <div class="total-price" id="total-price">Итого: 0 ₽</div>
+                </div>
+                
+                <button class="order-btn" id="order-btn" disabled>Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scritp.js"></script>
+</body>
+</html>
